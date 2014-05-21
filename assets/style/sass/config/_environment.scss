@@ -1,0 +1,30 @@
+// Font Stacks
+// -------------------------------------------------------------------------- //
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('../../font/MonoSocialIconsFont-1.10.eot');
+    src: url('../../font/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('../../font/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('../../font/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('../../font/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('../../font/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$heading: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+// Color Scheme
+// -------------------------------------------------------------------------- //
+$primary: #000;
+$secondary: #333;
+
+
+// Breakpoints
+// -------------------------------------------------------------------------- //
+$small: calc_em(320px);
+$medium: calc_em(640px);
+$large: calc_em(960px);
