@@ -51,7 +51,7 @@ canvas {
 
 #content {
   -webkit-animation-name: fadeInDown;
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.9s;
   -webkit-animation-fill-mode: both;
   line-height: 1.3;
   font-size: 20px;
@@ -69,6 +69,34 @@ canvas {
 
     strong {
       font-weight: 600;
+
+      a {
+        padding-bottom: 0px!important;
+        border-color: rgba(255,255,255,0);
+        -webkit-transition: .2s linear border-color;
+        -moz-transition: .2s linear border-color;
+        transition: .2s linear border-color;
+        position: relative;
+
+        span {
+          font-size: 13px;
+          position: absolute;
+          top: -15px;
+          right: 5px;
+          opacity: 0.5;
+          -webkit-transition: .1s linear opacity;
+          -moz-transition: .1s linear opacity;
+          transition: .1s linear opacity;
+        }
+
+        &:hover {
+          border-color: rgba(255,255,255,1);
+
+          span {
+            opacity: 1;
+          }
+        }
+      }
     }
   }
 
@@ -77,9 +105,9 @@ canvas {
     text-decoration: none;
     padding-bottom: 3px;
     border-bottom: white 2px solid;
-    -webkit-transition: .2s linear padding-bottom;
+    -webkit-transition: .2s linear padding-bottom ;
     -moz-transition: .2s linear padding-bottom;
-    transition: .2s linear padding-bottom;
+    transition: .2s linear padding-bottom ;
 
     &:hover {
         padding-bottom: 0;
