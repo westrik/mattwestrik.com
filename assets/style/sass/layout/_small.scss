@@ -1,13 +1,70 @@
 @media only screen and (min-width: 620px) {
 
+    /* Animations */
+    @-webkit-keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        top: 34%;
+      }
+
+      100% {
+        opacity: 1;
+        top: 40%;
+      }
+    }
+    @-moz-keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        top: 34%;
+      }
+
+      100% {
+        opacity: 1;
+        top: 40%;
+      }
+    }
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        top: 34%;
+      }
+
+      100% {
+        opacity: 1;
+        top: 40%;
+      }
+    }
+
+
+
+
+
+    canvas {
+      border: 10px rgba(0,0,0,.7) solid;
+    }
+
     #content {
       font-size: 33px;
-      transition: .3s ease-in-out all;
       position: absolute;
       left: 10%;
       top: 40%;
+      bottom: auto;
       width: 500px;
       margin: 0;
+
+      h1 {
+          font-size: 1.5em;
+          line-height: 1.3;
+      }
     }    
+
+    nav ul {
+      margin: 25px 10px 0 0;
+
+      a {
+        font-size: 21px;
+      }
+    }
+      
 
 }

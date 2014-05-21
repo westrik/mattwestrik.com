@@ -1,3 +1,39 @@
+/* Animations */
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    bottom:10px; 
+  }
+
+  100% {
+    opacity: 1;
+    bottom: -10px;
+  }
+}
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    bottom:10px; 
+  }
+
+  100% {
+    opacity: 1;
+    bottom:-10px; 
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    bottom: 10px;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: -10px;
+  }
+}
+
+
 body {
   font: normal 100% "Source Sans Pro",$body; 
   -webkit-font-smoothing: antialiased;
@@ -7,7 +43,6 @@ body {
 canvas {
   z-index: -1;
   background:linear-gradient(#3e55dc,#3d91be);
-  border: 10px rgba(0,0,0,.7) solid;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -15,17 +50,22 @@ canvas {
 
 
 #content {
+  -webkit-animation-name: fadeInDown;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
   line-height: 1.3;
   font-size: 20px;
-  margin: 70px 30px; 
-  transition: .3s ease-in-out all;
+  margin: 30px; 
+  transition: .3s ease-in-out left;
+  position: absolute;
+  bottom: -10px;
 
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: normal;
     margin: 0;
-    line-height: 1.3;
+    line-height: 1.7;
 
     strong {
       font-weight: 600;
@@ -37,9 +77,9 @@ canvas {
     text-decoration: none;
     padding-bottom: 3px;
     border-bottom: white 2px solid;
-    -webkit-transition: .2s ease-in-out padding-bottom;
-    -moz-transition: .2s ease-in-out padding-bottom;
-    transition: .2s ease-in-out padding-bottom;
+    -webkit-transition: .2s linear padding-bottom;
+    -moz-transition: .2s linear padding-bottom;
+    transition: .2s linear padding-bottom;
 
     &:hover {
         padding-bottom: 0;
@@ -73,5 +113,43 @@ ul#social {
       color: rgba(255,255,255,1);
     }
   }
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+
+  li {
+    display: inline;
+  }
+
+  a {
+    padding: 15px 40px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-transition: ease-in-out .1s background;
+    -moz-transition: ease-in-out .1s background;
+    transition: ease-in-out .1s background;
+
+    &:hover {
+      background: rgba(0,0,0,.3);
+    }
+    &.disabled {
+      text-decoration: line-through;
+
+      &:hover {
+        background: rgba(0,0,0,.05);
+        cursor: default;
+      }
+    }
+  }
+
 
 }
+
+
+
+
+
+
