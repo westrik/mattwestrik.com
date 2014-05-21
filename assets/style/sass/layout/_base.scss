@@ -15,12 +15,11 @@ canvas {
 
 
 #content {
-  font-size: 33px;
   line-height: 1.3;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  width: 500px;
+  font-size: 20px;
+  margin: 70px 30px; 
+  transition: .3s ease-in-out all;
+
 
   h1 {
     font-size: 1.5em;

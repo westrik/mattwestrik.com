@@ -1,3 +1,13 @@
-@media only screen and (min-width: $small) {
+@media only screen and (min-width: 620px) {
+
+    #content {
+      font-size: 33px;
+      transition: .3s ease-in-out all;
+      position: absolute;
+      left: 10%;
+      top: 40%;
+      width: 500px;
+      margin: 0;
+    }    
 
 }
