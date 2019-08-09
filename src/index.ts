@@ -1,1 +1,1 @@
-console.log("hello world from ts");
+import "./style.scss"
