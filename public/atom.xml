@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Matt Westrik - Software Engineer</title>
+	<link href="https://mattwestrik.com/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://mattwestrik.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-03-06T00:00:00+00:00</updated>
+	<id>https://mattwestrik.com/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Building a Clock with NTP &amp; PoE</title>
+		<published>2021-03-06T00:00:00+00:00</published>
+		<updated>2021-03-06T00:00:00+00:00</updated>
+		<link href="https://mattwestrik.com/blog/clock/" type="text/html"/>
+		<id>https://mattwestrik.com/blog/clock/</id>
+		<content type="html">&lt;p&gt;Like many people, I’ve had a lot of spare time over the last year. After running out of shows to watch, I started getting back into DIY electronics.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;clock mainboard - power &#x2F; controller&lt;&#x2F;li&gt;
+&lt;li&gt;face plate boards
+&lt;ul&gt;
+&lt;li&gt;large VFD&lt;&#x2F;li&gt;
+&lt;li&gt;small VFD&lt;&#x2F;li&gt;
+&lt;li&gt;LED matrix&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Test post</title>
+		<published>2021-03-05T00:00:00+00:00</published>
+		<updated>2021-03-05T00:00:00+00:00</updated>
+		<link href="https://mattwestrik.com/blog/test/" type="text/html"/>
+		<id>https://mattwestrik.com/blog/test/</id>
+		<content type="html">&lt;p&gt;This is my first blog post 😄.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#002b36;&quot;&gt;
+&lt;code class=&quot;language-py&quot; data-lang=&quot;py&quot;&gt;&lt;span style=&quot;color:#859900;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b58900;&quot;&gt;hello_world&lt;&#x2F;span&gt;&lt;span style=&quot;color:#657b83;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#859900;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;args&lt;&#x2F;span&gt;&lt;span style=&quot;color:#839496;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#859900;&quot;&gt;**&lt;&#x2F;span&gt;&lt;span style=&quot;color:#268bd2;&quot;&gt;kwargs&lt;&#x2F;span&gt;&lt;span style=&quot;color:#657b83;&quot;&gt;):
+  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#859900;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span style=&quot;color:#657b83;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#839496;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cb4b16;&quot;&gt;{}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#839496;&quot;&gt;&amp;quot;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b58900;&quot;&gt;format&lt;&#x2F;span&gt;&lt;span style=&quot;color:#657b83;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#839496;&quot;&gt;args&lt;&#x2F;span&gt;&lt;span style=&quot;color:#657b83;&quot;&gt;))
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+	</entry>
+</feed>
