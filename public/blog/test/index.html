@@ -3,11 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Blog</title>
-  <!--<link rel="stylesheet" href="">-->
+  <title></title>
+  <link rel="stylesheet" href="https://mattwestrik.com/site.css"/>
 </head>
 
 <body>
+  <header>
+  <div class="search-container">
+    <input id="search" type="search" placeholder="🔎 Search">
+    <div class="search-results">
+      <div class="search-results__items"></div>
+    </div>
+  </div>
+</header>
+
+
   <section class="section">
     <div class="container">
       
@@ -16,13 +26,17 @@
 </h1>
 <p class="subtitle"><strong>2021-03-05</strong></p>
 <p>This is my first blog post.</p>
-<pre style="background-color:#2b303b;">
-<code class="language-py" data-lang="py"><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">hello_world</span><span style="color:#c0c5ce;">(*</span><span style="color:#bf616a;">args</span><span style="color:#c0c5ce;">, **</span><span style="color:#bf616a;">kwargs</span><span style="color:#c0c5ce;">):
-  </span><span style="color:#96b5b4;">print</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#d08770;">{}</span><span style="color:#c0c5ce;">&quot;.</span><span style="color:#bf616a;">format</span><span style="color:#c0c5ce;">(args))
+<pre style="background-color:#fdf6e3;">
+<code class="language-py" data-lang="py"><span style="color:#859900;">def </span><span style="color:#b58900;">hello_world</span><span style="color:#657b83;">(</span><span style="color:#859900;">*</span><span style="color:#268bd2;">args</span><span style="color:#657b83;">, </span><span style="color:#859900;">**</span><span style="color:#268bd2;">kwargs</span><span style="color:#657b83;">):
+  </span><span style="color:#859900;">print</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#cb4b16;">{}</span><span style="color:#839496;">&quot;</span><span style="color:#657b83;">.</span><span style="color:#b58900;">format</span><span style="color:#657b83;">(args))
 </span></code></pre>
 
     </div>
   </section>
 </body>
+
+<script type="text/javascript" src="https://mattwestrik.com/elasticlunr.min.js"></script>
+<script type="text/javascript" src="https://mattwestrik.com/search_index.en.js"></script>
+<script type="text/javascript" src="https://mattwestrik.com/search.js"></script>
 
 </html>

@@ -3,11 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Blog</title>
-  <!--<link rel="stylesheet" href="">-->
+  <title></title>
+  <link rel="stylesheet" href="https://mattwestrik.com/site.css"/>
 </head>
 
 <body>
+  <header>
+  <div class="search-container">
+    <input id="search" type="search" placeholder="🔎 Search">
+    <div class="search-results">
+      <div class="search-results__items"></div>
+    </div>
+  </div>
+</header>
+
+
   <section class="section">
     <div class="container">
       
@@ -22,5 +32,9 @@
     </div>
   </section>
 </body>
+
+<script type="text/javascript" src="https://mattwestrik.com/elasticlunr.min.js"></script>
+<script type="text/javascript" src="https://mattwestrik.com/search_index.en.js"></script>
+<script type="text/javascript" src="https://mattwestrik.com/search.js"></script>
 
 </html>

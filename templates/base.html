@@ -3,16 +3,22 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Blog</title>
-  <!--<link rel="stylesheet" href="">-->
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <link rel="stylesheet" href="{{ get_url(path="site.css") | safe }}"/>
 </head>
 
 <body>
+  {% include "header.html" %}
+
   <section class="section">
     <div class="container">
       {% block content %} {% endblock %}
     </div>
   </section>
 </body>
+
+<script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") | safe }}"></script>
+<script type="text/javascript" src="{{ get_url(path="search_index.en.js") | safe }}"></script>
+<script type="text/javascript" src="{{ get_url(path="search.js") | safe }}"></script>
 
 </html>
