@@ -2,7 +2,7 @@ base_url = "https://mattwestrik.com"
 title = "Matt Westrik - Software Engineer"
 
 compile_sass = true
-build_search_index = true
+#build_search_index = true
 #minify_html = true # this breaks line-breaks in code blocks
 generate_feed = true
 taxonomies = [
