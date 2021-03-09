@@ -1,0 +1,139 @@
+
+:root {
+  --main-bg-color: #fdfdfd;
+  --main-text-color: rgba(0, 0, 0, 0.85);
+  --primary-accent-color: hsl(269, 100%, 70%);
+  --secondary-accent-color: hsl(269, 100%, 50%);
+  --h1-shadow-color: rgba(0, 0, 0, 0.05);
+  --h2-shadow-color: rgba(0, 0, 0, 0.04);
+  --h3-shadow-color: rgba(0, 0, 0, 0.03);
+  --h4-shadow-color: rgba(0, 0, 0, 0.03);
+  --blockquote-border-color: rgba(0, 0, 0, 0.15);
+  --code-bg-color: rgba(0, 0, 0, 0.08);
+  --code-text-color: #111;
+  --kbd-bg-color: #f7f7f7;
+  --kbd-shadow-color: rgba(0, 0, 0, 0.45);
+  --pre-bg-color: #eee;
+  --pre-border-color: rgba(0, 0, 0, 0.15);
+  --footnotes-border-color: rgba(0, 0, 0, 0.15);
+  --input-border-color_default: rgba(0, 0, 0, 0.85);
+  --input-border-color_focus: rgba(255, 255, 255, 0.4);
+  --input-border-color_error: rgba(255, 0, 0, 0.4);
+  --input-border-color_focus_error: rgba(255, 0, 0, 0.6);
+  --button-bg-color_default: rgba(0, 0, 0, 0.85);
+  --button-bg-color_hover: rgba(0, 0, 0, 0.75);
+  --button-bg-color_active: rgba(0, 0, 0, 0.65);
+  --button-border-color_hover: rgba(0, 0, 0, 0.65);
+  --button-border-color_active: rgba(0, 0, 0, 0.45);
+  --alert-bg-color: hsl(50, 100%, 74%);
+  --alert-shadow-color: transparent;
+  --box-bg-color: hsl(170, 61%, 89%);
+  --box-shadow-color: transparent;
+  --note-bg-color: hsl(311, 63%, 86%);
+  --note-shadow-color: transparent;
+  --blue1: hsl(203, 95.7%, 27.3%);
+  --blue2: hsl(202, 82.8%, 41%);
+  --blue3: hsl(198, 84.3%, 54.9%);
+  --blue4: hsl(196, 94%, 67.5%);
+  --blue5: hsl(195, 100%, 85.1%);
+  --grey1: hsl(210, 24.4%, 16.1%);
+  --grey2: hsl(208, 17.9%, 29.6%);
+  --grey3: hsl(211, 12.2%, 43.3%);
+  --grey4: hsl(211, 12.8%, 64.9%);
+  --grey5: hsl(214, 14.9%, 90.8%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg-color: #111;
+    --main-text-color: rgba(255, 255, 255, 0.85);
+    --primary-accent-color: hsl(269, 100%, 70%);
+    --secondary-accent-color: hsl(269, 100%, 50%);
+    --h1-shadow-color: rgba(0, 0, 0, 0.5);
+    --h2-shadow-color: rgba(0, 0, 0, 0.4);
+    --h3-shadow-color: rgba(0, 0, 0, 0.3);
+    --h4-shadow-color: rgba(0, 0, 0, 0.3);
+    --blockquote-border-color: rgba(255, 255, 255, 0.15);
+    --code-bg-color: #444;
+    --code-text-color: #eee;
+    --kbd-bg-color: #333;
+    --kbd-shadow-color: hsla(269, 100%, 80%, 0.5);
+    --pre-bg-color: #444;
+    --pre-border-color: rgba(255, 255, 255, 0.15);
+    --footnotes-border-color: rgba(255, 255, 255, 0.15);
+    --input-border-color_default: rgba(255, 255, 255, 0.85);
+    --input-border-color_focus: rgba(255, 255, 255, 0.4);
+    --input-border-color_error: rgba(255, 0, 0, 0.4);
+    --input-border-color_focus_error: rgba(255, 0, 0, 0.6);
+    --button-bg-color_default: rgba(255, 255, 255, 0.85);
+    --button-bg-color_hover: rgba(255, 255, 255, 0.8);
+    --button-bg-color_active: rgba(255, 255, 255, 0.75);
+    --button-border-color_hover: rgba(255, 255, 255, 0.25);
+    --button-border-color_active: rgba(255, 255, 255, 0.15);
+    --alert-bg-color: rgba(255, 0, 0, 0.4);
+    //--alert-shadow-color: hsl(50, 100%, 65%);
+    --alert-shadow-color: transparent;
+    --box-bg-color: #222;
+    --box-shadow-color: hsl(170, 61%, 65%);
+    --note-bg-color: #222;
+    --note-shadow-color: hsl(311, 63%, 65%);
+    --blue1: hsl(202, 87.4%, 34.1%);
+    --blue2: hsl(201, 78.9%, 46.5%);
+    --blue3: hsl(197, 92%, 61%);
+    --blue4: hsl(195, 96.9%, 74.9%);
+    --blue5: hsl(195, 100%, 94.5%);
+    --grey1: hsl(208, 20%, 24.5%);
+    --grey2: hsl(208, 14.1%, 37.5%);
+    --grey3: hsl(211, 10.5%, 53.1%);
+    --grey4: hsl(210, 15.6%, 82.4%);
+    --grey5: hsl(216, 33.3%, 97.1%);
+  }
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+a {
+  color: var(--primary-accent-color);
+}
+
+h1 {
+  text-shadow: 1px 1px 5px var(--h1-shadow-color);
+}
+
+h2 {
+  text-shadow: 1px 1px 4px var(--h2-shadow-color);
+}
+
+h3 {
+  text-shadow: 1px 1px 3px var(--h3-shadow-color);
+}
+
+h4,
+h5,
+h6 {
+  text-shadow: 1px 1px 1px var(--h4-shadow-color);
+}
+
+blockquote {
+  border-color: var(--blockquote-border-color);
+}
+
+//code,
+//kbd,
+//pre {
+//  background-color: var(--code-bg-color);
+//  color: var(--code-text-color);
+//}
+//
+//kbd {
+//  background-color: var(--kbd-bg-color);
+//  box-shadow: 0 0 4px 0 var(--kbd-shadow-color);
+//}
+//
+//pre {
+//  background-color: var(--pre-bg-color);
+//  border-color: var(--pre-border-color);
+//}
